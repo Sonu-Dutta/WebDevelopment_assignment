@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form and Input tags</title>
+</head>
+
+<body>
+    <!-- Whenever we add a <form> tag in the HTML, it is going to ask for some action for submitting that particular form in the backend for future reference. 
+        So, for now, we will write it as backend.php. All the data submitted in a form will be stored automatically in the backend “backend.php” after submitting it. -->
+    <form action="backend.php">
+        <!-- The <label> element help users who have difficulty clicking on very small regions-->
+        <label for="name"> Name</label>
+        <!-- The name here is used so that the backend can recognize the tag that we are using. -->
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="myRole">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+
+        <br>
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            <!-- To add any numeric text  -->
+            Languages known: <input type="number" name="my
+            lang">
+        </div>
+        <br>
+        <!-- . Radio buttons are such buttons that allows to select any one of the following options amongst all. 
+            For example, while selecting the gender, we can only select either male or female. 
+            Whereas the checkbox allows selecting the multiple options available.  -->
+        <div>
+            Are you eligible?: <input type="checkbox" name="myEligibility" checked>
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+            Other <input type="radio" name="myGender">
+        </div>
+
+        <br>
+        <div>
+            <label for="city">City</label>
+            <select name="myCity" id="city">
+                <option value="Pune" selected>Pune</option>
+                <option value="Mumbai" >Mumbai</option>
+                <option value="Kolkata" >Kolkata</option>
+                <option value="Nashik" >Nashik</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            Write about yourself: <br><textarea name="myText" cols="90" rows="10"></textarea>
+        </div>
+
+        <br>
+        <br>
+
+        <div>
+            <input type="submit" value="Submit Now">
+            <!-- To reset all the information, entered in the form, we take the help of a reset button. -->
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+</body>
+
+</html>

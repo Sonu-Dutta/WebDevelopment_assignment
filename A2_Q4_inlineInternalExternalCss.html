@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline, Internal and External CSS</title>
+    <!-- External css -->
+    <link rel="stylesheet" href="A2_Q4_style.css">
+    <!-- If you add too much Inline CSS, then your HTML will become too messy.
+    Internal CSS is used to define a style tag for a single HTML page. 
+    It is defined in the <head> section within a <style> elemen 
+        
+    External CSS is mostly used when you want to make changes on multiple pages. 
+    It is an ideal condition because it facilitates you to change the look of the entire website by changing just one file. 
+    We will add the stylesheet in the <head> section using <link> tag.-->
+
+    <!-- Internal css -->
+    <style>
+        p {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: rgb(170, 228, 168);
+            color: rgb(177, 33, 33) ;
+            border-radius: 40px;
+            padding:50px;
+            margin: 30px;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <!-- inline css ---
+        the last thing written takes first priority if '!important' is not mentioned-->
+    <h2 style="color: rgb(13, 99, 46); text-align:center">Inline Internal and External CSS</h2>
+    <p style="color:rgb(57, 15, 97); background-color:rgb(219, 183, 207);">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus aliquam atque molestias nobis accusamus
+        autem quo delectus adipisci sunt numquam porro, enim nam neque expedita voluptate laboriosam rerum labore quae
+        voluptatum necessitatibus tenetur quaerat ullam est velit. Reiciendis hic deserunt, commodi non consequuntur
+        magnam, nemo aspernatur eaque quos animi assumenda quae corporis nobis illum eum vitae distinctio ipsa. Ratione.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus aliquam atque molestias nobis accusamus
+        autem quo delectus adipisci sunt numquam porro, enim nam neque expedita voluptate laboriosam rerum labore quae
+        voluptatum necessitatibus tenetur quaerat ullam est velit. Reiciendis hic deserunt, commodi non consequuntur
+        magnam, nemo aspernatur eaque quos animi assumenda quae corporis nobis illum eum vitae distinctio ipsa. Ratione.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus aliquam atque molestias nobis accusamus
+        autem quo delectus adipisci sunt numquam porro, enim nam neque expedita voluptate laboriosam rerum labore quae
+        voluptatum necessitatibus tenetur quaerat ullam est velit. Reiciendis hic deserunt, commodi non consequuntur
+        magnam, nemo aspernatur eaque quos animi assumenda quae corporis nobis illum eum vitae distinctio ipsa. Ratione.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus aliquam atque molestias nobis accusamus
+        autem quo delectus adipisci sunt numquam porro, enim nam neque expedita voluptate laboriosam rerum labore quae
+        voluptatum necessitatibus tenetur quaerat ullam est velit. Reiciendis hic deserunt, commodi non consequuntur
+        magnam, nemo aspernatur eaque quos animi assumenda quae corporis nobis illum eum vitae distinctio ipsa. Ratione.
+    </p>
+</body>
+
+</html>
