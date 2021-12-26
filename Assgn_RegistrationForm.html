@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        .main{
+            height: 99hv;
+        }
+        h1{
+            text-align: center;
+        }
+        div{
+            background-color: rgb(154, 221, 241);
+            padding: 30px;
+            
+        }
+        #register{
+            color: white;
+            background-color: rgb(31, 170, 38);
+            border: none;
+            padding: 17px;
+            font-size: larger;
+        
+        }
+        .lngth{
+            width: 99%;
+        }
+        .threeDivision{
+            width:27%;
+        }
+        .space,.threeDivision{
+            padding: 10px;
+            border: none;
+        }
+        #h{
+            color: crimson;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="main">
+    <h1>Student Registration Form</h1>
+    <hr id="h">
+    Enter Full Name : <input type="text" name="myName" class=" threeDivision " id="yName" placeholder="Firstname"> 
+    <input type="text" name="myName" id="mName" class=" threeDivision"  placeholder="Middlename"> 
+    <input type="text" name="myName" id="lName" class=" threeDivision"  placeholder="Lastname">
+    <br> <br>
+
+    Course : <select name="course" id="course" class="space">
+        <option value="course">Course</option>
+        <option value="Python">Python</option>
+        <option value="Java">Java</option>
+        <option value="Cpp">C++</option>
+        <option value="c">C</option>
+    </select> <br><br>
+    
+    Gender: <input type="radio" name="gender" id="male"> Male
+    <input type="radio"name="gender" id="female" > Female
+    <input type="radio" name="gender" id="other"> Other
+    <br><br>
+
+    Phone : <input type="text" name="phone" id="phone" size="1px" value="+91" class="space"> 
+    <input type="text" name="no" id="no" class="space" placeholder="phone no.">
+    <br><br>
+
+    Current Address : <br> <textarea name="add" id="add" placeholder=" Current Address"  class="lngth space " rows="5"></textarea>
+    <br><br>
+    
+    Email <br>
+    <input type="email" name="myemail" id="myemail" class="lngth space" placeholder="Enter Email">
+    <br><br>
+
+    Password <br>
+    <input type="password" name="mypass" id="mypass" class="lngth space" placeholder="Enter Password">
+    <br><br>
+
+    Re-type Password <br>
+    <input type="password" name="mypass2" id="mypass2" class="lngth space" placeholder="Retype Password">
+    <br><br>
+
+    <input type="submit" value="Register" id="register" class="lngth ">
+    <br><br>
+
+
+</div>
+</body>
+</html>
